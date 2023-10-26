@@ -5,9 +5,13 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "lint:ts": "eslint --ext \".ts,.vue\"",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:ts && npm run lint:prettier",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "jest"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
