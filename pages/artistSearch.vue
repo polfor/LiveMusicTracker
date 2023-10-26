@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="promo Bars">
-        <carousel :items-to-show="3.5" :wrap-around="true">
+        <carousel :items-to-show="2" :wrap-around="true">
             <Slide :key="slide">
                 <div class="carousel__item"><artistResult name="Johny Hallyday"></artistResult></div>
             </Slide>
