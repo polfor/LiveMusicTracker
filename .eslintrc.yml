@@ -1,9 +1,10 @@
 env:
   browser: true
-  es2021: true
+  node: true
 extends:
-  - standard-with-typescript
+  - "@nuxtjs/eslint-config-typescript"
   - plugin:vue/vue3-essential
+  - "plugin:prettier/recommended"
 parserOptions:
   parser: "@typescript-eslint/parser"
   project: "tsconfig.json"

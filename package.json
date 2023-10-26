@@ -16,6 +16,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/test-utils": "^3.8.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "eslint": "^8.52.0",
     "eslint-config-standard-with-typescript": "^39.1.1",
