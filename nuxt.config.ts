@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/eslint-module",'vue3-carousel-nuxt']
+  modules: ["@nuxtjs/eslint-module",'vue3-carousel-nuxt'],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ]
 });

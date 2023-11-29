@@ -101,6 +101,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  height: fit-content;
 }
+
 </style>
   

@@ -4,9 +4,25 @@
         <div class="searchbar">
             <input type="text" placeholder="Search bar by name"/>
             <div class="search-button">Search</div>
+            <div class="filter-buttons">
+                <div class="filter-header">Sort By:</div>
+                <select>
+                    <option>Distance</option>
+                    <option>Rating</option>
+                    <option>A/Z</option>
+                    <option>Z/A</option>
+                </select>
+                <div class="filter-header">Filter:</div>
+                <div><input type="checkbox" /> Bar</div>
+                <div><input type="checkbox" />Concert Hall</div>
+                <div><input type="checkbox" />Outdoor Venue</div>
+            </div>
         </div>
     </div>
-    <div class="promo Bars">
+    <div class="promoted-bars">
+        <div class="promoted-title">
+            Featured:
+        </div>
         <carousel :items-to-show="3.5" :wrap-around="true">
             <Slide :key="slide">
                 <div class="carousel__item"><barResult name="Hard Rock Cafe"></barResult></div>
@@ -27,6 +43,7 @@
     </div>
     <div class="search-contents">
         <div class="search-results">
+            <div class="content-title">Results</div>
             <barResult name="Hard Rock Cafe"></barResult>
             <barResult name="Hard Rock Cafe"></barResult>
             <barResult name="Hard Rock Cafe"></barResult>
@@ -51,11 +68,40 @@
 </script>
 
 <style scoped>
-.search-contents{
+
+.content-title {
+    font-size: 2rem;
+    color: #FFFFFF;
+    width: 100%;
+}
+.promoted-title{
+    font-size:  4rem;
+    color: #FFFFFF;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    background-color: #EB569D;
+}
+.promoted-bars{    
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    z-index: 3;
+}
+.filter-header {
+    font-size: large;
+    font-weight: bold;
+}
+.filter-buttons{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+}
+.search-contents{
+    width: 80vw;
+    margin-top: -30rem;
+    padding-top: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
 }
 .search-results{
     display: flex;
@@ -66,12 +112,13 @@
     row-gap: 1rem;
 }
 .filters{
-    margin-top: 10rem;
     height: 5rem;
     background-color: cornflowerblue;
     display: flex;
     padding: 1rem;
     align-items: center;
+    z-index: 2;
+    position: relative;
 }
 .searchbar {
  display: flex;

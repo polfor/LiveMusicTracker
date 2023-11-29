@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div style="background-color: #4D4C5C;">
     <NuxtPage />
   </div>
 </template>
