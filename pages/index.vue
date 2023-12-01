@@ -4,14 +4,14 @@
         Welcome to Live Music Tracker
     </div>
     <div class="button-aligner">
-        <nuxt-link to="/barSearch" class="button-anim register-button" href="#" style="--color: #5f17a7;">
+        <nuxt-link to="/barSearch" class="button-anim register-button" style="--color: #5f17a7;" id="registerbutton">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Join Us
         </nuxt-link>
-        <nuxt-link to="/barSearch" class="button-anim login-button" href="#" style="--color: #280b41;">
+        <nuxt-link to="/barSearch" class="button-anim login-button" style="--color: #280b41;" id="loginbutton">
             <span></span>
             <span></span>
             <span></span>
@@ -75,8 +75,6 @@ Integer feugiat sagittis mauris, quis condimentum ex pellentesque sit amet. In p
 .login-button {
     margin-left: 15vw;
 }
-
-
 .button-anim {
   position: relative;
   padding: 16px 30px;

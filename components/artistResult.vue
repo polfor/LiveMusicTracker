@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="object-card">
+    <nuxt-link to="/artistDetails" class="object-card">
       <div>
         <img
           class="artist-pic"
@@ -66,7 +66,7 @@
         </div>
         <div>in 2 wks</div>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -93,6 +93,7 @@
 .last-pic {
   margin-left: -1rem;
   z-index: 1;
+  margin-right: 1rem;
 }
 .not-first-pic {
   margin-left: -1rem;
@@ -138,5 +139,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 </style>

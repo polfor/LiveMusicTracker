@@ -3,17 +3,18 @@
     <div class="nav-bar">
       <nuxt-link to="/">
         <img
+          alt="logo"
           class="logo"
           src="https://cdn.discordapp.com/attachments/1080429253750964237/1128262869402792027/LMT-1.png?ex=654a092e&is=6537942e&hm=598fbec5afdbb95ec83043700f50453bfd1ee489bc668b71680c1eebe6d0ebfd&"
         />
       </nuxt-link>
       <div class="nav-aligner">
-        <nuxt-link to="/barSearch" class="nav-button">Venues <font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
-        <nuxt-link to="/artistSearch" class="nav-button">Artists <font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
-        <nuxt-link to="/eventSearch" class="nav-button">Events <font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
+        <nuxt-link to="/barSearch" class="nav-button">Venues<font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
+        <nuxt-link to="/artistSearch" class="nav-button">Artists<font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
+        <nuxt-link to="/eventSearch" class="nav-button">Events<font-awesome-icon class="rotate-down" icon="fa-solid fa-angle-up" /></nuxt-link>
       </div>
       <div class="connection-buttons">
-        <nuxt-link to="/" class="logout-button">logout</nuxt-link>
+        <nuxt-link to="/" class="logout-button" id="logoutbutton"><font-awesome-icon icon="fa-solid fa-arrow-right-from-bracket" /></nuxt-link>
       </div>
     </div>
   </div>
@@ -80,15 +81,16 @@
 }
 .logo {
   height: 5rem;
+  margin-top: 1rem;
 }
 .nav-bar {
   background-color: #2D0C2D;
-  height: 8rem;
+  height: 6rem;
   display: flex;
   padding: 1rem;
   margin-left: -0.5rem;
   margin-top: -0.5rem;
-  width: 99%;
+  width: 100vw;
   position: sticky;
   top: 0;
   align-items: center;
