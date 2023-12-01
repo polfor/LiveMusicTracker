@@ -34,7 +34,7 @@ Integer feugiat sagittis mauris, quis condimentum ex pellentesque sit amet. In p
     height: 90vh;
     background-image: url("/temp_hero.jpg");
     background-size: cover;
-    z-index: 2;
+    z-index: 0;
 }
 .welcome-title {
     font-size: 5rem;
@@ -45,10 +45,11 @@ Integer feugiat sagittis mauris, quis condimentum ex pellentesque sit amet. In p
     display: flex;
     box-shadow: 0px 0px 15px 10px rgba(160, 160, 160, 0.2);
     margin-left: 5vw;
+    z-index: 1;
 }
 .welcome-text {
-    margin-top: 40vh;
-    color: #FFFFFF;
+    margin-top: 20vh;
+    color: #2D0C2D;
     margin-left: 5vw;
 }
 .welcome-text-title {
