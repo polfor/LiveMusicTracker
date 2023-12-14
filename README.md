@@ -1,10 +1,8 @@
-# Local Harmony Hub
-
-Welcome to Local Harmony Hub, where we strive to amplify the vibrancy of your local music scene! Our project is dedicated to connecting musicians, promoters, and fans, creating a dynamic ecosystem for live music events, open mics, and participative concerts. Join us in fostering a stronger sense of community and musical exploration in your area.
+# Live Music Tracker
+Welcome to Live Music Tracker, where we strive to amplify the vibrancy of your local music scene! Our project is dedicated to connecting musicians, promoters, and fans, creating a dynamic ecosystem for live music events, open mics, and participative concerts. Join us in fostering a stronger sense of community and musical exploration in your area.
 
 ## About
-
-Local Harmony Hub is a platform designed to make the hidden gems of your local music scene more visible. Whether you're a talented artist looking for opportunities to perform in open mics or concerts, a passionate promoter eager to discover new talent, or a music enthusiast seeking exciting events near you, this is the space for you.
+Live Music Tracker is a platform designed to make the hidden gems of your local music scene more visible. Whether you're a talented artist looking for opportunities to perform in open mics or concerts, a passionate promoter eager to discover new talent, or a music enthusiast seeking exciting events near you, this is the space for you.
 
 ## Key Features
 
@@ -44,4 +42,4 @@ npm run dev
 
 We welcome contributions from developers, designers, and music enthusiasts! Feel free to open issues, submit pull requests, or share your ideas to help us improve and grow.
 
-Let's come together to celebrate and elevate our local music scenes! 🎶 #LocalHarmonyHub #MusicCommunity #LiveMusicTracker
+Let's come together to celebrate and elevate our local music scenes! 🎶  #MusicCommunity #LiveMusicTracker
