@@ -41,5 +41,6 @@ npm run dev
 ## Contribute
 
 We welcome contributions from developers, designers, and music enthusiasts! Feel free to open issues, submit pull requests, or share your ideas to help us improve and grow.
+Here's the link to the onBoarding documentation: https://livemusictracker.atlassian.net/wiki/spaces/LiveMusicT/pages/3212500/Guide+d+Onboarding+pour+D+veloppeur+-+LiveMusicTracker
 
 Let's come together to celebrate and elevate our local music scenes! 🎶  #MusicCommunity #LiveMusicTracker
