@@ -34,11 +34,14 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@mdi/font": "^7.3.67",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@typescript-eslint/parser": "^6.9.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "vite-plugin-vuetify": "^2.0.1",
+    "vuetify": "^3.4.7"
   },
   "lint-staged": {
     "**/*.{js,ts,vue}": [
