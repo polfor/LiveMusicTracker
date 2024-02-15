@@ -12,8 +12,6 @@ export default defineNuxtConfig({
       });
     },
     "@nuxtjs/eslint-module",
-    '@nuxtjs/auth-next'
-
   ],
   vite: {
     vue: {
