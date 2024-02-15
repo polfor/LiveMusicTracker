@@ -11,7 +11,9 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }));
       });
     },
-    "@nuxtjs/eslint-module"
+    "@nuxtjs/eslint-module",
+    '@nuxtjs/auth-next'
+
   ],
   vite: {
     vue: {
@@ -19,5 +21,6 @@ export default defineNuxtConfig({
         transformAssetUrls
       }
     }
-  }
+  },
+  plugins: ["./plugins/vuetify.ts"],
 });
