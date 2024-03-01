@@ -1,5 +1,31 @@
+import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/eslint-module"]
+  // ...
+  build: {
+    transpile: ["vuetify"]
+  },
+  runtimeConfig: {
+    MONGO_URI: process.env.MONGODB_URI
+  },
+  nitro: {
+    plugins: ["@/server/db/index.ts"]
+  },
+  // modules: [
+  //   (_options, nuxt) => {
+  //     nuxt.hooks.hook("vite:extendConfig", config => {
+  //       // @ts-expect-error
+  //       config.plugins.push(vuetify({ autoImport: true }));
+  //     });
+  //   },
+  //   "@nuxtjs/eslint-module"
+  // ],
+  vite: {
+    vue: {
+      template: {
+        transformAssetUrls
+      }
+    }
+  }
 });
