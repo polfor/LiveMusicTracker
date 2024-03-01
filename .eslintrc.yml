@@ -3,14 +3,27 @@ env:
   node: true
 extends:
   - "@nuxtjs/eslint-config-typescript"
-  - plugin:vue/vue3-essential
+  - "plugin:vue/vue3-essential"
   - "plugin:prettier/recommended"
 parserOptions:
   parser: "@typescript-eslint/parser"
   project: "tsconfig.json"
   ecmaVersion: latest
   sourceType: module
+  extraFileExtensions: ['.vue']
 plugins:
   - vue
   - prettier
-rules: { semi: 0, "@typescript-eslint/semi": ["error", "always"] }
+rules:
+  "@typescript-eslint/semi": ["error", "always"]
+  "prettier/prettier": ["error", {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  }]
+  "vue/multi-word-component-names": "off"

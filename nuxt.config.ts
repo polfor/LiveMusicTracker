@@ -12,20 +12,21 @@ export default defineNuxtConfig({
   nitro: {
     plugins: ["@/server/db/index.ts"]
   },
-  // modules: [
-  //   (_options, nuxt) => {
-  //     nuxt.hooks.hook("vite:extendConfig", config => {
-  //       // @ts-expect-error
-  //       config.plugins.push(vuetify({ autoImport: true }));
-  //     });
-  //   },
-  //   "@nuxtjs/eslint-module"
-  // ],
+  modules: [
+    (_options, nuxt) => {
+      nuxt.hooks.hook("vite:extendConfig", config => {
+        // @ts-expect-error
+        config.plugins.push(vuetify({ autoImport: true }));
+      });
+    },
+    "@nuxtjs/eslint-module"
+  ],
   vite: {
     vue: {
       template: {
         transformAssetUrls
       }
     }
-  }
+  },
+  plugins: ["./plugins/vuetify.ts"]
 });
