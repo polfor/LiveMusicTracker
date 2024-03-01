@@ -12,7 +12,15 @@ export default defineNuxtPlugin((app: any) => {
       {
         path: "~/components"
       }
-    ]
+    ],
+    defaults: {
+      VBtn: {
+        color: "primary",
+        backgroundColor: "secondary",
+        variant: "outlined",
+        rounded: true
+      }
+    }
   });
   app.vueApp.use(vuetify);
 });

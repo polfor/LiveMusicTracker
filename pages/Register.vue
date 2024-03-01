@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div>
     <v-container>
@@ -39,4 +37,43 @@
   </div>
 </template>
 
-<style scoped></style>
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "Register",
+  data() {
+    return {
+      password: "",
+      passwordConfirm: "",
+      email: ""
+    };
+  },
+  methods: {
+    register() {
+      // Ici, vous pouvez gérer l'inscription de l'utilisateur
+      // Par exemple, vous pouvez envoyer les données à un serveur
+      console.log(this.email, this.password, this.passwordConfirm);
+    }
+  }
+});
+</script>
+
+<style scoped>
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+</style>
