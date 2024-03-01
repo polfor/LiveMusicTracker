@@ -19,5 +19,6 @@ export default defineNuxtConfig({
         transformAssetUrls
       }
     }
-  }
+  },
+  plugins: ["./plugins/vuetify.ts"]
 });
