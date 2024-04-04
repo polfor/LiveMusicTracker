@@ -10,20 +10,25 @@ parserOptions:
   project: "tsconfig.json"
   ecmaVersion: latest
   sourceType: module
-  extraFileExtensions: ['.vue']
+  extraFileExtensions: [".vue"]
 plugins:
   - vue
   - prettier
+ignorePatterns: ["database/*"]
 rules:
   "@typescript-eslint/semi": ["error", "always"]
-  "prettier/prettier": ["error", {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": false,
-    "trailingComma": "none",
-    "bracketSpacing": true,
-    "arrowParens": "avoid"
-  }]
+  "prettier/prettier":
+    [
+      "error",
+      {
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": false,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "arrowParens": "avoid"
+      }
+    ]
   "vue/multi-word-component-names": "off"
