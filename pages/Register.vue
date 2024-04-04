@@ -1,27 +1,34 @@
 <template>
-  <v-card class="position" elevation="16">
-    <form class="form" @submit.prevent="register">
-      <v-text-field v-model="email" type="email" placeholder="Email" required />
-      <v-text-field
-        v-model="password"
-        type="password"
-        placeholder="Password"
-        required
-      />
-      <v-text-field
-        v-model="passwordConfirm"
-        type="password"
-        placeholder="Confirm Password"
-        required
-      />
-      <v-btn class="my-blue" type="submit" prepend-icon="mdi-send">
-        Register
-      </v-btn>
-      <router-link to="/login">
-        <v-btn color="primary">Login</v-btn>
-      </router-link>
-    </form>
-  </v-card>
+  <div>
+    <v-card class="position" elevation="16">
+      <form class="form" @submit.prevent="register">
+        <v-text-field
+          v-model="email"
+          type="email"
+          placeholder="Email"
+          required
+        />
+        <v-text-field
+          v-model="password"
+          type="password"
+          placeholder="Password"
+          required
+        />
+        <v-text-field
+          v-model="passwordConfirm"
+          type="password"
+          placeholder="Confirm Password"
+          required
+        />
+        <v-btn class="my-blue" type="submit" prepend-icon="mdi-send">
+          Register
+        </v-btn>
+        <router-link to="/login">
+          <v-btn color="primary">Login</v-btn>
+        </router-link>
+      </form>
+    </v-card>
+  </div>
 </template>
 
 <script lang="ts">
@@ -55,6 +62,7 @@ export default defineComponent({
   height: 50%;
   width: 50%;
 }
+
 .form {
   display: flex;
   flex-direction: column;
