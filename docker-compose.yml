@@ -1,0 +1,47 @@
+# Use root/example as user/password credentials
+version: "3.1"
+
+services:
+  mongo-db:
+    image: mongo
+    restart: always
+    env_file:
+      - .env.prod
+    ports:
+      - 27017:${MONGO_DATABASE_PORT}
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+    volumes:
+      - mongo_data:/data/db
+      - ./database/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    env_file:
+      - .env.prod
+    ports:
+      - 8081:${MONGO_EXPRESS_PORT}
+    environment:
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: ${ME_CONFIG_MONGODB_ENABLE_ADMIN}
+      ME_CONFIG_MONGODB_AUTH_USERNAME: ${ME_CONFIG_MONGODB_AUTH_USERNAME}
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: ${ME_CONFIG_MONGODB_AUTH_PASSWORD}
+      ME_CONFIG_MONGODB_URL: ${ME_CONFIG_MONGODB_URL}
+
+  back_end:
+    build:
+      context: .
+      target: production
+    env_file:
+      - .env.prod
+    ports:
+      - "3000:${BACK_END_PORT}"
+    environment:
+      NODE_ENV: production
+      MONGODB_URI: ${MONGODB_URI}
+    container_name: lmt-server
+
+volumes:
+  mongo_data:
