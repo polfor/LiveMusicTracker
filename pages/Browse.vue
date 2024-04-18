@@ -132,122 +132,83 @@ const venues = [
 
 const events = [
   {
-    title: "Check out these hot Events",
-    chip: "",
+    title: "Upcoming Concerts",
+    chip: "Music",
     content: [
       {
-        name: "Le Lucifer",
+        name: "Rock Night",
+        date: "2024-05-15",
         cover:
           "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Rock", "Live Band", "Tickets required"]
       },
       {
-        name: "Arkea Arena",
+        name: "Jazz Evening",
+        date: "2024-05-20",
         cover:
           "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
+        chips: ["Jazz", "Live Music", "Food & Drinks"]
       },
       {
-        name: "Le Sherlock Holmes",
+        name: "Folk Music Festival",
+        date: "2024-05-25",
         cover:
           "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Folk", "Family Friendly", "Free Entry"]
       }
     ]
   },
   {
-    title: "Because you like ",
-    chip: "Dancing",
+    title: "This Weekend",
+    chip: "Weekend",
     content: [
       {
-        name: "Le Lucifer",
+        name: "Blues Night",
+        date: "2024-05-14",
         cover:
           "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Blues", "Live Music", "Cocktails"]
       },
       {
-        name: "Arkea Arena",
+        name: "Pop Concert",
+        date: "2024-05-16",
         cover:
           "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
-      },
-      {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Pop", "Tickets required", "Merch available"]
       }
     ]
   },
   {
-    title: "Looking for something tonight?",
-    chip: "",
+    title: "Special Events",
+    chip: "Special",
     content: [
       {
-        name: "Le Lucifer",
+        name: "Classical Music Night",
+        date: "2024-06-01",
         cover:
           "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Classical", "Elegant", "Dress Code"]
       },
       {
-        name: "Arkea Arena",
+        name: "Rock Legends",
+        date: "2024-06-05",
         cover:
           "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
+        chips: ["Rock", "Legendary Bands", "Tickets required"]
       },
       {
-        name: "Le Sherlock Holmes",
+        name: "Indie Bands Showcase ",
+        date: "2024-06-10",
         cover:
           "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Indie", "New Talent", "Free Entry"]
       },
       {
-        name: "HMS Victory",
+        name: "Hip-Hop Beats Night",
+        date: "2024-06-15",
         cover:
           "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      }
-    ]
-  },
-  {
-    title: "Events like ",
-    chip: "Le Lucifer",
-    content: [
-      {
-        name: "Le Lucifer",
-        cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "Arkea Arena",
-        cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
-      },
-      {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        chips: ["Hip-Hop", "Live DJ", "Dance Floor"]
       }
     ]
   }
@@ -255,126 +216,64 @@ const events = [
 
 const artists = [
   {
-    title: "Check out these hot Artists",
-    chip: "",
+    title: "Live Performances",
+    chip: "Live",
     content: [
       {
-        name: "Le Lucifer",
-        cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Emma Léo",
+        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        chips: ["Soul", "Pop", "R&B"]
       },
       {
-        name: "Arkea Arena",
-        cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
+        name: "David Garett",
+        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        chips: ["Rock", "Acoustic", "Cover Songs"]
       },
       {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Sophia Marquez",
+        cover: "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
+        chips: ["Jazz", "Blues", "Live"]
       },
       {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Lucas Ren",
+        cover: "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
+        chips: ["Pop", "Electronic", "Dance"]
       }
     ]
   },
   {
-    title: "Because you like ",
-    chip: "Rock",
+    title: "Acoustic Evenings",
+    chip: "Acoustic",
     content: [
       {
-        name: "Le Lucifer",
-        cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Nora Elm",
+        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        chips: ["Folk", "Indie", "Acoustic"]
       },
       {
-        name: "Arkea Arena",
-        cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
-      },
-      {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Ian Smith",
+        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        chips: ["Country", "Soft Rock", "Singer-Songwriter"]
       }
     ]
-  },
-  {
-    title: "Looking for something tonight?",
-    chip: "",
+  },{
+    title: "Metal Evenings",
+    chip: "Acoustic",
     content: [
       {
-        name: "Le Lucifer",
-        cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Power wold",
+        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        chips: ["Metal", "bouboum", "tete"]
       },
       {
-        name: "Arkea Arena",
-        cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
-      },
-      {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      }
-    ]
-  },
-  {
-    title: "Artists like ",
-    chip: "Johny Hallyday",
-    content: [
-      {
-        name: "Le Lucifer",
-        cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "Arkea Arena",
-        cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
-      },
-      {
-        name: "Le Sherlock Holmes",
-        cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
-      },
-      {
-        name: "HMS Victory",
-        cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+        name: "Amaranth",
+        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        chips: ["classic", "dance", "Singer-Songwriter"]
       }
     ]
   }
 ];
+
 </script>
 
 <template>

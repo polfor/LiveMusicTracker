@@ -18,9 +18,7 @@ const props = defineProps({
       </div>
     </v-card>
     <v-chip-group class="venue-chip-group">
-      <v-chip class="venue-chip">Live Music</v-chip>
-      <v-chip class="venue-chip">Happy hour</v-chip>
-      <v-chip class="venue-chip">Bustling</v-chip>
+      <v-chip v-for="item in venueChips" class="venue-chip">{{ item }}</v-chip>
     </v-chip-group>
   </div>
 </template>
