@@ -5,6 +5,14 @@ import "vuetify/styles";
 
 export default defineNuxtPlugin((app: any) => {
   const vuetify = createVuetify({
+    theme: {
+      defaultTheme: "light"
+    },
+    components: [
+      {
+        path: "~/components"
+      }
+    ],
     defaults: {
       VBtn: {
         color: "primary",

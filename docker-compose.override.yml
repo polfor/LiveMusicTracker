@@ -6,7 +6,7 @@ services:
     image: mongo
     restart: always
     env_file:
-      - .env.prod
+      - .env
     ports:
       - 27017:${MONGO_DATABASE_PORT}
     environment:
@@ -21,7 +21,7 @@ services:
     image: mongo-express
     restart: always
     env_file:
-      - .env.prod
+      - .env
     ports:
       - 8081:${MONGO_EXPRESS_PORT}
     environment:
@@ -31,17 +31,8 @@ services:
       ME_CONFIG_MONGODB_URL: ${ME_CONFIG_MONGODB_URL}
 
   back_end:
-    build:
-      context: .
-      target: production
-    env_file:
-      - .env.prod
-    ports:
-      - "3000:${BACK_END_PORT}"
-    environment:
-      NODE_ENV: production
-      MONGODB_URI: ${MONGODB_URI}
-    container_name: lmt-server
+    deploy:
+      replicas: 0
 
 volumes:
   mongo_data:
