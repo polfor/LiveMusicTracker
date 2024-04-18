@@ -31,17 +31,8 @@ services:
       ME_CONFIG_MONGODB_URL: ${ME_CONFIG_MONGODB_URL}
 
   back_end:
-    build:
-      context: .
-      target: development
-    env_file:
-      - .env
-    ports:
-      - "3000:${BACK_END_PORT}"
-    environment:
-      NODE_ENV: development
-      MONGODB_URI: ${MONGODB_URI}
-    container_name: lmt-server
+    deploy:
+      replicas: 0
 
 volumes:
   mongo_data:
