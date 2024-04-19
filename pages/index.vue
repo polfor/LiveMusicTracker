@@ -18,7 +18,9 @@
                 </div>
                 <v-row align="left">
                   <v-col>
-                    <v-btn class="ma-2" variant="outlined">Login</v-btn>
+                    <NuxtLink to="/login" class="text-black">
+                      <v-btn class="ma-2" variant="outlined">Login</v-btn>
+                    </NuxtLink>
                     <NuxtLink to="/register" class="text-black">
                       <v-btn class="ma-2" variant="tonal"
                         >Create an account</v-btn

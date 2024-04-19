@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card class="position" elevation="16">
-      <form class="form" @submit.prevent="register">
+      <form class="form" @submit.prevent="login">
         <v-text-field
           v-model="email"
           type="email"
@@ -14,17 +14,11 @@
           placeholder="Password"
           required
         />
-        <v-text-field
-          v-model="passwordConfirm"
-          type="password"
-          placeholder="Confirm Password"
-          required
-        />
-        <v-btn class="my-blue" type="submit" prepend-icon="mdi-send">
-          Register
+        <v-btn class="my-blue" type="submit" prepend-icon="mdi-login">
+          Login
         </v-btn>
-        <router-link to="/login">
-          <v-btn color="primary">Login</v-btn>
+        <router-link to="/register">
+          <v-btn color="primary">Register</v-btn>
         </router-link>
       </form>
     </v-card>
@@ -35,19 +29,18 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Register",
+  name: "Login",
   data() {
     return {
-      password: "",
-      passwordConfirm: "",
-      email: ""
+      email: "",
+      password: ""
     };
   },
   methods: {
-    register() {
-      // Ici, vous pouvez gérer l'inscription de l'utilisateur
-      // Par exemple, vous pouvez envoyer les données à un serveur
-      console.log(this.email, this.password, this.passwordConfirm);
+    login() {
+      // Ici, vous pouvez gérer la connexion de l'utilisateur
+      // Par exemple, envoyer les données à un serveur pour vérification
+      console.log(this.email, this.password);
     }
   }
 });
