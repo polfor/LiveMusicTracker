@@ -221,22 +221,26 @@ const artists = [
     content: [
       {
         name: "Emma Léo",
-        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        cover:
+          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
         chips: ["Soul", "Pop", "R&B"]
       },
       {
         name: "David Garett",
-        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        cover:
+          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
         chips: ["Rock", "Acoustic", "Cover Songs"]
       },
       {
         name: "Sophia Marquez",
-        cover: "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
+        cover:
+          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
         chips: ["Jazz", "Blues", "Live"]
       },
       {
         name: "Lucas Ren",
-        cover: "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
+        cover:
+          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
         chips: ["Pop", "Electronic", "Dance"]
       }
     ]
@@ -247,33 +251,37 @@ const artists = [
     content: [
       {
         name: "Nora Elm",
-        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        cover:
+          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
         chips: ["Folk", "Indie", "Acoustic"]
       },
       {
         name: "Ian Smith",
-        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        cover:
+          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
         chips: ["Country", "Soft Rock", "Singer-Songwriter"]
       }
     ]
-  },{
+  },
+  {
     title: "Metal Evenings",
     chip: "Acoustic",
     content: [
       {
         name: "Power wold",
-        cover: "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
+        cover:
+          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
         chips: ["Metal", "bouboum", "tete"]
       },
       {
         name: "Amaranth",
-        cover: "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
+        cover:
+          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
         chips: ["classic", "dance", "Singer-Songwriter"]
       }
     ]
   }
 ];
-
 </script>
 
 <template>
