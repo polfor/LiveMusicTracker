@@ -301,7 +301,7 @@ const artists = [
         <v-window v-model="tab">
           <v-window-item value="one">
             <v-container fluid>
-              <div v-for="(item, index) in venues">
+              <div v-for="(item, index) in venues" :key="index">
                 <v-row>
                   <v-col class="text-h6">
                     {{ item.title }}
@@ -329,7 +329,7 @@ const artists = [
 
           <v-window-item value="two">
             <v-container fluid>
-              <div v-for="(item, index) in events">
+              <div v-for="(item, index) in events" :key="index">
                 <v-row>
                   <v-col class="text-h6">
                     {{ item.title }}
@@ -357,7 +357,7 @@ const artists = [
 
           <v-window-item value="three">
             <v-container fluid>
-              <div v-for="(item, index) in artists">
+              <div v-for="(item, index) in artists" :key="index">
                 <v-row>
                   <v-col class="text-h6">
                     {{ item.title }}
