@@ -18,7 +18,7 @@ const props = defineProps({
       </div>
     </v-card>
     <v-chip-group class="venue-chip-group">
-      <v-chip v-for="item in venueChips" class="venue-chip">{{ item }}</v-chip>
+      <v-chip v-for="(item, index) in venueChips" class="venue-chip" :key="index">{{ item }}</v-chip>
     </v-chip-group>
   </div>
 </template>

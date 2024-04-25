@@ -314,6 +314,7 @@ const artists = [
                   <v-slide-group class="pa-4">
                     <v-slide-group-item
                       v-for="(entry, entryIndex) in item.content"
+                      :key="entryIndex"
                     >
                       <Venue
                         :venue-name="entry.name"
@@ -342,6 +343,7 @@ const artists = [
                   <v-slide-group class="pa-4">
                     <v-slide-group-item
                       v-for="(entry, entryIndex) in item.content"
+                      :key="entryIndex"
                     >
                       <Venue
                         :venue-name="entry.name"
@@ -370,6 +372,7 @@ const artists = [
                   <v-slide-group class="pa-4">
                     <v-slide-group-item
                       v-for="(entry, entryIndex) in item.content"
+                      :key="entryIndex"
                     >
                       <Venue
                         :venue-name="entry.name"
