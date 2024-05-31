@@ -10,3 +10,7 @@ export const SignInBody = Joi.object({
   email: Joi.string().email().required(),
   password: Joi.string().min(3).required()
 });
+
+export const RefreshToken = Joi.object({
+  refresh_token: Joi.string().required()
+});
