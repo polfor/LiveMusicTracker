@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     transpile: ["vuetify"]
   },
   runtimeConfig: {
-    MONGO_URI: process.env.MONGODB_URI
+    MONGO_URI: process.env.MONGODB_URI,
+    JWT_TOKEN_SECRET: process.env.JWT_TOKEN_SECRET
   },
   nitro: {
     plugins: ["@/server/db/index.ts"]
