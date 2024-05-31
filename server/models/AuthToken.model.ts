@@ -1,6 +1,15 @@
 import mongoose from "mongoose";
-import { encode } from "jwt-simple";
+import jwt from "jwt-simple";
 import { createTokenFamily } from "./TokenFamily.model";
+
+export interface AuthTokenInterface {
+  type: string;
+  userId: string;
+  email: string;
+  familyId: string;
+  iat: number;
+  exp: number;
+}
 
 const schemaAuthToken: mongoose.Schema = new mongoose.Schema({
   family_id: {
@@ -40,24 +49,24 @@ export async function createToken(
 
   try {
     const authToken = new AuthTokenModel({
-      family_id: familyTokenId,
-      access_token: encode(
+      familyId: familyTokenId,
+      access_token: jwt.encode(
         {
           type: "access_token",
           userId,
           email,
-          family_id: familyTokenId,
+          familyId: familyTokenId,
           iat: Math.round(Date.now() / 1000),
           exp: Math.round(Date.now() / 1000 + 5 * 60 * 60)
         },
         config.JWT_TOKEN_SECRET
       ),
-      refresh_token: encode(
+      refresh_token: jwt.encode(
         {
           type: "refresh_token",
           userId,
           email,
-          family_id: familyTokenId,
+          familyId: familyTokenId,
           iat: Math.round(Date.now() / 1000),
           exp: Math.round(Date.now() / 1000 + 7 * 24 * 60 * 60)
         },

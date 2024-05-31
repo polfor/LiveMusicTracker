@@ -1,6 +1,8 @@
 import * as bcrypt from "bcrypt";
 import { createToken } from "~/server/models/AuthToken.model";
-import UserAuthModel from "~/server/models/UserAuth.model";
+import UserAuthModel, {
+  UserAuthInterface
+} from "~/server/models/UserAuth.model";
 import { SignInBody } from "~/server/validation";
 
 export default defineEventHandler(async event => {
@@ -15,10 +17,10 @@ export default defineEventHandler(async event => {
     });
   }
 
-  const userAuth = await UserAuthModel.findOne({
+  const userAuth: UserAuthInterface | null = await UserAuthModel.findOne({
     mail: value.email
   });
-  if (userAuth === undefined) {
+  if (userAuth === null) {
     throw createError({
       message: "Unauthorized, no match for this email.",
       statusCode: 401,
@@ -36,8 +38,8 @@ export default defineEventHandler(async event => {
 
   // Create a token family
 
-  const userId: string = userAuth?._id.toString();
-  const userMail: string = userAuth?.mail;
+  const userId: string = userAuth.id;
+  const userMail: string = userAuth.mail;
 
   const authToken = await createToken(userId, userMail);
 

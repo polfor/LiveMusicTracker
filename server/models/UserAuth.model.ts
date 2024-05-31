@@ -1,8 +1,23 @@
 import mongoose from "mongoose";
 import * as bcrypt from "bcrypt";
-import UserProfileModel, { schemaUserProfile } from "./UserProfile.model";
+import UserProfileModel, {
+  UserProfileInterface,
+  schemaUserProfile
+} from "./UserProfile.model";
 
 const saltRounds = 10;
+
+export interface UserAuthInterface {
+  id: string;
+  mail: string;
+  hashed_password: string;
+  hash_key: string;
+  spotify_id: string;
+  is_certif: boolean;
+  enum_type: string;
+  is_verified: boolean;
+  profile: UserProfileInterface;
+}
 
 const schemaUserAuth: mongoose.Schema = new mongoose.Schema({
   mail: {

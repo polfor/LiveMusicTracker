@@ -1,5 +1,12 @@
 import mongoose from "mongoose";
 
+export interface ProDataInterface {
+  description: string;
+  phone: string;
+  files: string[];
+  zones: string[];
+}
+
 const schemaProData: mongoose.Schema = new mongoose.Schema({
   description: {
     type: String,
@@ -12,6 +19,16 @@ const schemaProData: mongoose.Schema = new mongoose.Schema({
   files: { type: [String], default: [] },
   zones: { type: [String], default: [] }
 });
+
+export interface UserProfileInterface {
+  username: string;
+  birthdate: Date;
+  description: string;
+  links: string[];
+  gallery: string[];
+  profile_pic: string;
+  pro_data: ProDataInterface;
+}
 
 export const schemaUserProfile: mongoose.Schema = new mongoose.Schema({
   username: {
