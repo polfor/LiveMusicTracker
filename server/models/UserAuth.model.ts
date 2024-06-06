@@ -6,7 +6,7 @@ import UserProfileModel, {
   schemaUserProfile
 } from "./UserProfile.model";
 
-const saltRounds = 10;
+export const saltRounds = 10;
 
 export interface UserAuthInterface {
   id: string;

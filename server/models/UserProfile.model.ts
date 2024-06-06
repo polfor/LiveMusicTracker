@@ -27,6 +27,7 @@ export interface UserProfileInterface {
   links: string[];
   gallery: string[];
   profile_pic: string;
+  favorite_music_type: string[];
   pro_data: ProDataInterface;
 }
 
@@ -55,6 +56,10 @@ export const schemaUserProfile: mongoose.Schema = new mongoose.Schema({
   profile_pic: {
     type: String,
     default: null
+  },
+  favorite_music_type: {
+    type: [String],
+    default: []
   },
   pro_data: {
     type: schemaProData,
