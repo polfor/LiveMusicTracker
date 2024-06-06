@@ -4,9 +4,5 @@
   "compilerOptions": {
     "types": ["vitest/globals"]
   },
-  "include": [
-    "./**/*.ts",
-    "./**/*.vue",
-    "./**/*.ext",
-  ]
+  "include": ["./**/*.ts", "./**/*.vue", "./**/*.ext"]
 }
