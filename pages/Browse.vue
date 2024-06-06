@@ -43,28 +43,28 @@ const venues = [
     chip: "Dancing",
     content: [
       {
-        name: "Le Lucifer",
+        name: "Danse Machine",
         cover:
-          "https://www.koifaire.com/upload/15/fiches/37064/album-1/2617.jpg",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+          "https://assets-global.website-files.com/6377ec31bb12397f50163e70/63be8b853f5b75b853605915_Mask%20group-2-min.jpg",
+        chips: ["Outdoor Seating", "Happy hour", "Bustling"]
       },
       {
-        name: "Arkea Arena",
+        name: "L'Éclypse Discothèque",
         cover:
-          "https://www.arkeaarena.com/app/uploads/2022/12/AA-SITE-4IMG-BARS-0.jpg",
-        chips: ["Live Music", "Tickets required", "Bustling"]
+          "https://scontent-cdg4-3.xx.fbcdn.net/v/t1.6435-9/32894083_447305235698941_6818112749625671680_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=caV5Mf29GtUQ7kNvgFo41Yu&_nc_ht=scontent-cdg4-3.xx&oh=00_AYDSM2v3QCDUhfX6upTy9ZYhszRzmjj3IgULpJXiUDkMgw&oe=6688E480",
+        chips: ["Live Music", "Dance Floor", "Bustling"]
       },
       {
-        name: "Le Sherlock Holmes",
+        name: "El Rincón Del Jamón",
         cover:
-          "https://sherlockholmesbordeaux.azurewebsites.net/wp-content/uploads/2024/01/1591348284IMG_20170130_173453_resized_20170831_034628196-scaled.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+          "https://bodega-bordeaux.com/wp-content/uploads/2024/01/CorrectColor_6_20240108.png",
+        chips: ["Live Music", "Outdoor Seating", "Bustling"]
       },
       {
-        name: "HMS Victory",
+        name: "Bar l'Avant-scène",
         cover:
-          "https://hmsvictory.fr/wp-content/uploads/2024/01/HMS-Victory-Bar-2.webp",
-        chips: ["Live Music", "Happy hour", "Bustling"]
+          "https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/414450485_902622595196548_8556306737688185012_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kdwkKtidci8Q7kNvgEcTI6r&_nc_ht=scontent-cdg4-3.xx&oh=00_AYCRRMzut6SoS5lgjnjq4Xp6uuVp7J1QQpnD3KJhHvHV1Q&oe=66673E6F",
+        chips: ["Live Music", "No Reservation", "Bustling"]
       }
     ]
   },

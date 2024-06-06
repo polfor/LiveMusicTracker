@@ -6,21 +6,28 @@ const props = defineProps({
 });
 </script>
 <template>
-  <div class="venue-sizer ma-4">
-    <v-card max-width="200" theme="Dark">
-      <v-img :aspect-ratio="1" width="200" :src="props.venueCover" cover>
-      </v-img>
-      <div class="venue-name-background text-h6">
-        <span class="venue-name-color-highlight"></span>
-        <div class="venue-name-text">
-          {{ props.venueName }}
+  <NuxtLink to="/profile" class="venue-link">
+    <div class="venue-sizer ma-4">
+      <v-card max-width="200" theme="Dark">
+        <v-img :aspect-ratio="1" width="200" :src="props.venueCover" cover>
+        </v-img>
+        <div class="venue-name-background text-h6">
+          <span class="venue-name-color-highlight"></span>
+          <div class="venue-name-text">
+            {{ props.venueName }}
+          </div>
         </div>
-      </div>
-    </v-card>
-    <v-chip-group class="venue-chip-group">
-      <v-chip v-for="(item, index) in venueChips" class="venue-chip" :key="index">{{ item }}</v-chip>
-    </v-chip-group>
-  </div>
+      </v-card>
+      <v-chip-group class="venue-chip-group">
+        <v-chip
+          v-for="(item, index) in venueChips"
+          class="venue-chip"
+          :key="index"
+          >{{ item }}</v-chip
+        >
+      </v-chip-group>
+    </div>
+  </NuxtLink>
 </template>
 <style scoped>
 .venue-name-background {
@@ -36,6 +43,10 @@ const props = defineProps({
 .venue-sizer {
   max-width: 250px;
   overflow: hidden;
+}
+
+.venue-link {
+  text-decoration: none;
 }
 
 .venue-chip-group {
