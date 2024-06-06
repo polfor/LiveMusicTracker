@@ -1,8 +1,15 @@
 import mongoose from "mongoose";
 
+export interface FamilyTokenInterface {
+  id: string;
+  user_id: string;
+  is_valid: boolean;
+}
+
 const schemaFamilyToken: mongoose.Schema = new mongoose.Schema({
   user_id: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
     required: true
   },
   is_valid: {
@@ -11,7 +18,7 @@ const schemaFamilyToken: mongoose.Schema = new mongoose.Schema({
   }
 });
 
-const TokenFamilyModel = mongoose.model("FamilyToken", schemaFamilyToken);
+const TokenFamilyModel = mongoose.model("TokenFamily", schemaFamilyToken);
 
 export default TokenFamilyModel;
 

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// @ts-ignore
 export default async _nitroApp => {
   const config = useRuntimeConfig();
 

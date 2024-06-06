@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as bcrypt from "bcrypt";
 import { createToken } from "~/server/models/AuthToken.model";
 import UserAuthModel, {

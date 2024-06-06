@@ -2,13 +2,21 @@ import mongoose from "mongoose";
 import jwt from "jwt-simple";
 import { createTokenFamily } from "./TokenFamily.model";
 
-export interface AuthTokenInterface {
+export interface JWTTokenInterface {
   type: string;
   userId: string;
   email: string;
   familyId: string;
   iat: number;
   exp: number;
+}
+
+export interface AuthTokenInterface {
+  id: string;
+  family_id: string;
+  access_token: string;
+  refresh_token: string;
+  already_refresh: boolean;
 }
 
 const schemaAuthToken: mongoose.Schema = new mongoose.Schema({
@@ -49,7 +57,7 @@ export async function createToken(
 
   try {
     const authToken = new AuthTokenModel({
-      familyId: familyTokenId,
+      family_id: familyTokenId,
       access_token: jwt.encode(
         {
           type: "access_token",

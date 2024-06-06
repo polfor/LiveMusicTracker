@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+// @ts-ignore
 import * as bcrypt from "bcrypt";
 import UserProfileModel, {
   UserProfileInterface,
