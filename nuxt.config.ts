@@ -1,3 +1,4 @@
+// @ts-nocheck
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -7,7 +8,8 @@ export default defineNuxtConfig({
     transpile: ["vuetify"]
   },
   runtimeConfig: {
-    MONGO_URI: process.env.MONGODB_URI
+    MONGO_URI: process.env.MONGODB_URI,
+    JWT_TOKEN_SECRET: process.env.JWT_TOKEN_SECRET
   },
   nitro: {
     plugins: ["@/server/db/index.ts"]
