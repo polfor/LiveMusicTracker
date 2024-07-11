@@ -2,6 +2,7 @@
   <NuxtLayout>
     <v-app>
       <div class="template">
+        <LMTHeader></LMTHeader>
         <NuxtPage />
         <LMTFooter></LMTFooter>
       </div>

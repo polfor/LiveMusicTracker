@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="register-margins">
     <v-card class="position" elevation="16">
       <form class="form" @submit.prevent="register">
         <v-text-field
@@ -54,6 +54,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.register-margins {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .position {
   display: flex;
   justify-content: center;
